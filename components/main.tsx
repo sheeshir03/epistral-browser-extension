@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react"
+import Cookies from "./cookies";
 
 function Main() {
     const [currentUrl, setCurrentUrl] = useState("")
@@ -16,14 +17,7 @@ function Main() {
     },[currentUrl])
   
     return (
-      <div
-        style={{
-          padding: 16
-        }}>
-        <h2>
-          You are currently at {currentUrl}
-        </h2>
-      </div>
+      <Cookies></Cookies>
     )
   }
 
